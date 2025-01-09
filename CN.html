@@ -213,18 +213,29 @@
 
     <footer class="py-12 relative overflow-hidden">
         <div class="container mx-auto px-4 text-center">
-            <div class="flex justify-center space-x-8 mb-8">
-                <a href="https://vtucircle.com/" class="glowing-btn" target="_blank">
-                    <i class="fas fa-globe mr-2"></i>VTU Code
-                </a>
-                <a href="https://gowrish.vercel.app/" class="glowing-btn" target="_blank">
-                    <i class="fas fa-user mr-2"></i>Portfolio
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8 mb-8">
+                <a href="https://gowrish005.vercel.app/" class="glowing-btn" target="_blank">
+                    <i class="fas fa-user-shield mr-2"></i>Admin
                 </a>
                 <a href="https://www.linkedin.com/in/sahil-a-gowda/" class="glowing-btn" target="_blank">
-                    <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                    <i class="fas fa-paint-brush mr-2"></i>Designer
+                </a>
+                <a href="https://github.com/the-amazing-team" class="glowing-btn" target="_blank">
+                    <i class="fas fa-users mr-2"></i>Team
                 </a>
             </div>
-            <p class="text-gray-400">© 2024 The Amazing Team @CITNC</p>
+            <a href="#" onclick="confirmRedirect(event)">
+                <img src="https://northcampus.cambridge.edu.in/wp-content/uploads/2021/03/NC-site-Logo.png" class="w-30 mx-auto mb-8" alt="Logo">
+                <p class="text-gray-400">© 2024 The Amazing Team @CITNC</p>
+            </a>
+            <script>
+                function confirmRedirect(event) {
+                    event.preventDefault();
+                    if (confirm('Do you want to go to the college website?')) {
+                        window.open('https://northcampus.cambridge.edu.in/', '_blank');
+                    }
+                }
+            </script>
         </div>
     </footer>
 </div>
