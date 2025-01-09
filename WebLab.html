@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Lab Programs - Interactive Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-content"></div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <div class="scroll-indicator">
+        <div class="scroll-progress"></div>
+    </div>
+        <div id="canvas-container" class="absolute inset-0"></div>
+        <div class="text-center z-10" style="margin-top: 30px;">
+            <h1 class="text-7xl font-bold mb-6 floating" style="opacity: 0.6073;"> Web Technology Lab [BCSL504] </h1>
+
+            <div class="mt-12">
+                <a href="index.html" class="glowing-btn scroll-btn" style="margin-top: 30px;">
+                    Home Page
+                </a>
+            </div>
+        </div>
+
+        
+
+    <section id="programs" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="program cyber-border">
+                    <div class="program-content h-[400px]">
+                        <div class="program-front">
+                            <img src="/images/1.jpg" alt="Program 1" class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-4">Program 1: HTML Basics</h3>
+                                <p class="text-gray-300">Develop the HTML page named as “Myfirstwebpage.html”. Add the following tags with relevant content.</p>
+                            </div>
+                        </div>
+                        <div class="program-back rounded-lg">
+                            <h3 class="text-xl font-bold mb-6">Program Actions</h3>
+                            <div class="space-y-4 w-full">
+                                <a href="https://github.com/cloudflarepro/1/blob/main/1.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fab fa-github mr-2"></i>View Code
+                                </a>
+                                <a href="https://amazingteam.vercel.app/1.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fas fa-play mr-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="program cyber-border">
+                    <div class="program-content h-[400px]">
+                        <div class="program-front">
+                            <img src="/images/2.jpg" alt="Program 2" class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-4">Program 2: HTML Tables</h3>
+                                <p class="text-gray-300">Develop the HTML page named as “Table.html” to display your class time table.</p>
+                            </div>
+                        </div>
+                        <div class="program-back rounded-lg">
+                            <h3 class="text-xl font-bold mb-6">Program Actions</h3>
+                            <div class="space-y-4 w-full">
+                                <a href="https://github.com/cloudflarepro/1/blob/main/2.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fab fa-github mr-2"></i>View Code
+                                </a>
+                                <a href="https://amazingteam.vercel.app/2.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fas fa-play mr-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="program cyber-border">
+                    <div class="program-content h-[400px]">
+                        <div class="program-front">
+                            <img src="/images/3.jpg" alt="Program 3" class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-4">Program 3: External CSS Styling</h3>
+                                <p class="text-gray-300">Develop an external style sheet named as “style.css” and provide different styles for various tags.</p>
+                            </div>
+                        </div>
+                        <div class="program-back rounded-lg">
+                            <h3 class="text-xl font-bold mb-6">Program Actions</h3>
+                            <div class="space-y-4 w-full">
+                                <a href="https://github.com/cloudflarepro/1/blob/main/3.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fab fa-github mr-2"></i>View Code
+                                </a>
+                                <a href="https://amazingteam.vercel.app/3.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fas fa-play mr-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="program cyber-border">
+                    <div class="program-content h-[400px]">
+                        <div class="program-front">
+                            <img src="/images/4.jpg" alt="Program 4" class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-4">Program 4: HTML Forms with CSS</h3>
+                                <p class="text-gray-300">Develop HTML page named as “registration.html” having variety of HTML input elements with background colors.</p>
+                            </div>
+                        </div>
+                        <div class="program-back rounded-lg">
+                            <h3 class="text-xl font-bold mb-6">Program Actions</h3>
+                            <div class="space-y-4 w-full">
+                                <a href="https://github.com/cloudflarepro/1/blob/main/4.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fab fa-github mr-2"></i>View Code
+                                </a>
+                                <a href="https://amazingteam.vercel.app/4.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fas fa-play mr-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="program cyber-border">
+                    <div class="program-content h-[400px]">
+                        <div class="program-front">
+                            <img src="/images/5.jpg" alt="Program 5" class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-4">Program 5: Semantic HTML and CSS</h3>
+                                <p class="text-gray-300">Develop HTML page named as “newpaper.html” having variety of HTML semantic elements with background colors.</p>
+                            </div>
+                        </div>
+                        <div class="program-back rounded-lg">
+                            <h3 class="text-xl font-bold mb-6">Program Actions</h3>
+                            <div class="space-y-4 w-full">
+                                <a href="https://github.com/cloudflarepro/1/blob/main/5.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fab fa-github mr-2"></i>View Code
+                                </a>
+                                <a href="https://amazingteam.vercel.app/5.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fas fa-play mr-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="program cyber-border">
+                    <div class="program-content h-[400px]">
+                        <div class="program-front">
+                            <img src="/images/6.jpg" alt="Program 6" class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-4">Program 6: JavaScript Calculator</h3>
+                                <p class="text-gray-300">Apply HTML, CSS and JavaScript to design a simple calculator to perform various operations.</p>
+                            </div>
+                        </div>
+                        <div class="program-back rounded-lg">
+                            <h3 class="text-xl font-bold mb-6">Program Actions</h3>
+                            <div class="space-y-4 w-full">
+                                <a href="https://github.com/cloudflarepro/1/blob/main/6.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fab fa-github mr-2"></i>View Code
+                                </a>
+                                <a href="https://amazingteam.vercel.app/6.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fas fa-play mr-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="program cyber-border">
+                    <div class="program-content h-[400px]">
+                        <div class="program-front">
+                            <img src="/images/7.jpg" alt="Program 7" class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-4">Program 7: JavaScript and JSON</h3>
+                                <p class="text-gray-300">Develop JavaScript program (with HTML/CSS) for various JSON operations.</p>
+                            </div>
+                        </div>
+                        <div class="program-back rounded-lg">
+                            <h3 class="text-xl font-bold mb-6">Program Actions</h3>
+                            <div class="space-y-4 w-full">
+                                <a href="https://github.com/cloudflarepro/1/blob/main/7.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fab fa-github mr-2"></i>View Code
+                                </a>
+                                <a href="https://amazingteam.vercel.app/7.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fas fa-play mr-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="program cyber-border">
+                    <div class="program-content h-[400px]">
+                        <div class="program-front">
+                            <img src="/images/8a.jpg" alt="Program 8 A" class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-4">Program 8 A: PHP Visitor Count</h3>
+                                <p class="text-gray-300">Develop a PHP program to keep track of the number of visitors visiting the web page.</p>
+                            </div>
+                        </div>
+                        <div class="program-back rounded-lg">
+                            <h3 class="text-xl font-bold mb-6">Program Actions</h3>
+                            <div class="space-y-4 w-full">
+                                <a href="https://github.com/cloudflarepro/1/blob/main/8a.html" class="glowing-btn block text-center" target="_blank"></a>
+                                    <i class="fab fa-github mr-2"></i>View Code
+                                </a>
+                                <a href="https://amazingteam.vercel.app/8a.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fas fa-play mr-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="program cyber-border">
+                    <div class="program-content h-[400px]">
+                        <div class="program-front">
+                            <img src="/images/8b.webp" alt="Program 8 B" class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-4">Program 8 B: PHP and Student Database</h3>
+                                <p class="text-gray-300">Develop a PHP program to sort the student records stored in the database using selection sort.</p>
+                            </div>
+                        </div>
+                        <div class="program-back rounded-lg">
+                            <h3 class="text-xl font-bold mb-6">Program Actions</h3>
+                            <div class="space-y-4 w-full">
+                                <a href="https://github.com/cloudflarepro/1/blob/main/8b.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fab fa-github mr-2"></i>View Code
+                                </a>
+                                <a href="https://amazingteam.vercel.app/8b.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fas fa-play mr-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="program cyber-border">
+                    <div class="program-content h-[400px]">
+                        <div class="program-front">
+                            <img src="/images/9.jpg" alt="Program 9" class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-4">Program 9: jQuery DOM Manipulation</h3>
+                                <p class="text-gray-300">Develop jQuery script for various DOM manipulation tasks.</p>
+                            </div>
+                        </div>
+                        <div class="program-back rounded-lg">
+                            <h3 class="text-xl font-bold mb-6">Program Actions</h3>
+                            <div class="space-y-4 w-full">
+                                <a href="https://github.com/cloudflarepro/1/blob/main/9.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fab fa-github mr-2"></i>View Code
+                                </a>
+                                <a href="https://amazingteam.vercel.app/9.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fas fa-play mr-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="program cyber-border">
+                    <div class="program-content h-[400px]">
+                        <div class="program-front">
+                            <img src="/images/10.jpg" alt="Program 10" class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-4">Program 10: Ajax Operations</h3>
+                                <p class="text-gray-300">Develop a JavaScript program with Ajax for various operations.</p>
+                            </div>
+                        </div>
+                        <div class="program-back rounded-lg">
+                            <h3 class="text-xl font-bold mb-6">Program Actions</h3>
+                            <div class="space-y-4 w-full">
+                                <a href="https://github.com/cloudflarepro/1/blob/main/10.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fab fa-github mr-2"></i>View Code
+                                </a>
+                                <a href="https://amazingteam.vercel.app/10.html" class="glowing-btn block text-center" target="_blank">
+                                    <i class="fas fa-play mr-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="cyber-border max-w-2xl mx-auto p-8">
+                <h2 class="text-4xl font-bold mb-8 text-center">Get in Touch</h2>
+                <form action="https://formsubmit.co/gowrishhb5@gmail.com" method="POST" class="space-y-6">
+                    <div class="relative">
+                        <input type="text" name="name" required
+                               class="w-full bg-gray-800/50 border-2 border-gray-700 rounded-lg p-4 focus:border-primary transition-all">
+                        <label class="absolute left-4 -top-3 bg-gray-800 px-2 text-sm">Your Name</label>
+                    </div>
+                    <div class="relative">
+                        <input type="email" name="email" required
+                               class="w-full bg-gray-800/50 border-2 border-gray-700 rounded-lg p-4 focus:border-primary transition-all">
+                        <label class="absolute left-4 -top-3 bg-gray-800 px-2 text-sm">Your Email</label>
+                    </div>
+                    <div class="relative">
+                        <textarea name="message" rows="4" required
+                                  class="w-full bg-gray-800/50 border-2 border-gray-700 rounded-lg p-4 focus:border-primary transition-all"></textarea>
+                        <label class="absolute left-4 -top-3 bg-gray-800 px-2 text-sm">Your Message</label>
+                    </div>
+                    <button type="submit" class="glowing-btn w-full">
+                        <i class="fas fa-paper-plane mr-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-8 mb-8">
+                <a href="https://vtucircle.com/" class="glowing-btn" target="_blank">
+                    <i class="fas fa-globe mr-2"></i>VTU Code
+                </a>
+                <a href="https://gowrish.vercel.app/" class="glowing-btn" target="_blank">
+                    <i class="fas fa-user mr-2"></i>Portfolio
+                </a>
+                <a href="https://www.linkedin.com/in/sahil-a-gowda/" class="glowing-btn" target="_blank">
+                    <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                </a>
+            </div>
+            <p class="text-gray-400">© 2024 The Amazing Team @CITNC</p>
+        </div>
+    </footer>
+</div>
+
+<script>
+    // Loader
+    window.addEventListener('load', () => {
+        document.querySelector('.loader').style.display = 'none';
+    });
+
+    // Particles.js Config
+    particlesJS("particles-js", {
+        particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: "#ffffff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5, random: false },
+            size: { value: 3, random: true },
+            line_linked: {
+                enable: true,
+                distance: 150,
+                color: "#ffffff",
+                opacity: 0.4,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 6,
+                direction: "none",
+                random: false,
+                straight: false,
+                out_mode: "out",
+                bounce: false,
+            }
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: { enable: true, mode: "repulse" },
+                onclick: { enable: true, mode: "push" },
+                resize: true
+            },
+            modes: {
+                repulse: { distance: 100, duration: 0.4 },
+                push: { particles_nb: 4 }
+            }
+        },
+        retina_detect: true
+    });
+
+    // Scroll Progress
+    window.addEventListener('scroll', () => {
+        const winScroll = document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.querySelector('.scroll-progress').style.height = scrolled + "%";
+    });
+
+    // Smooth Scroll
+    document.querySelector('.scroll-btn').addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector('#programs');
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // GSAP Animations
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Header Animation
+    gsap.from('header h1', {
+        duration: 1.5,
+        y: 100,
+        opacity: 0,
+        ease: 'power4.out'
+    });
+
+    // Program Cards Animation
+    gsap.utils.toArray('.program').forEach((program, i) => {
+        gsap.from(program, {
+            scrollTrigger: {
+                trigger: program,
+                start: 'top bottom-=100',
+                toggleActions: 'play none none reverse'
+            },
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            delay: i * 0.2,
+            ease: 'power4.out'
+        });
+    });
+
+    // Three.js Scene Setup
+   // Three.js Scene Setup
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+const container = document.getElementById('canvas-container');
+
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setClearColor(0x000000, 0);
+container.appendChild(renderer.domElement);
+
+// Create text geometry
+const loader = new THREE.FontLoader();
+const textMesh = new THREE.Mesh();
+const textMaterial = new THREE.MeshPhongMaterial({
+color: 0xffffff,
+specular: 0x666666
+});
+
+loader.load('https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/fonts/helvetiker_regular.typeface.json', function(font) {
+const textGeometry = new THREE.TextGeometry('Web Lab', {
+    font: font,
+    size: 3,
+    height: 0.5,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.1,
+    bevelSize: 0.05,
+    bevelOffset: 0,
+    bevelSegments: 5
+});
+
+textGeometry.center();
+textMesh.geometry = textGeometry;
+textMesh.material = textMaterial;
+scene.add(textMesh);
+});
+
+// Lighting
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+scene.add(ambientLight);
+
+const pointLight = new THREE.PointLight(0xffffff, 1);
+pointLight.position.set(5, 5, 5);
+scene.add(pointLight);
+
+camera.position.z = 15;
+
+// Animation
+function animate() {
+requestAnimationFrame(animate);
+
+if (textMesh) {
+    textMesh.rotation.y += 0.005;
+    textMesh.rotation.x = Math.sin(Date.now() * 0.001) * 0.1;
+}
+
+renderer.render(scene, camera);
+}
+
+// Handle window resize
+window.addEventListener('resize', () => {
+const width = window.innerWidth;
+const height = window.innerHeight;
+
+camera.aspect = width / height;
+camera.updateProjectionMatrix();
+renderer.setSize(width, height);
+});
+
+// Initialize animation
+animate();
+
+// Additional GSAP Animations
+// Program Cards Stagger Animation
+// GSAP Animations
+gsap.registerPlugin(ScrollTrigger);
+
+// Header Animation
+gsap.from('header h1', {
+duration: 1.5,
+y: 50,
+opacity: 0,
+ease: 'power4.out'
+});
+
+// Program Cards Animation with reduced movement
+gsap.utils.toArray('.program').forEach((program, i) => {
+gsap.from(program, {
+    scrollTrigger: {
+        trigger: program,
+        start: 'top bottom-=100',
+        toggleActions: 'play none none none'
+    },
+    y: 30,
+    opacity: 0.8,
+    duration: 0.8,
+    delay: i * 0.1,
+    ease: 'power2.out'
+});
+});
+
+// Contact Form Animation
+gsap.from('.cyber-border', {
+scrollTrigger: {
+    trigger: 'form',
+    start: 'top bottom-=100',
+    toggleActions: 'play none none none'
+},
+scale: 0.95,
+opacity: 0.8,
+duration: 0.8,
+ease: 'power2.out'
+});
+
+// Footer Links Animation
+gsap.from('footer a', {
+scrollTrigger: {
+    trigger: 'footer',
+    start: 'top bottom-=50',
+    toggleActions: 'play none none none'
+},
+y: 20,
+opacity: 0.8,
+duration: 0.8,
+stagger: 0.1,
+ease: 'power2.out'
+});
+</script>
+</body>
+</html>
