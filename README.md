@@ -1,6 +1,6 @@
 # AmazingVTU
 
-Welcome to **AmazingVTU**, a website designed to provide streamlined access to resources and information related to VTU (Visvesvaraya Technological University). This project is hosted live at [AmazingVTU](https://amazingvtu.vercel.app/) and is maintained by [Gowrish H B](https://github.com/gowrish005).
+Welcome to **AmazingVTU**, a website designed to provide streamlined access to resources and information related to VTU (Visvesvaraya Technological University). This project is hosted live at [AmazingVTU](https://amazingvtu.vercel.app/) and is maintained by [The Amazing Team](https://github.com/the-amazing-team).
 
 ## Features
 
