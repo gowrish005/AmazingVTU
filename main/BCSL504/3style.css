@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Styles for h2 and h3 */
+h2 {
+    color: green;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: blue;
+    font-style: italic;
+}
+
+/* Horizontal rule */
+hr {
+    border: 1px solid gray;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+p.highlight {
+    background-color: yellow;
+    padding: 5px;
+}
+
+/* Div and Span styles */
+div {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
+
+/* Time tag */
+time {
+    font-style: italic;
+    color: purple;
+}
+
+/* Image styles */
+img {
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Anchor tag styles */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
